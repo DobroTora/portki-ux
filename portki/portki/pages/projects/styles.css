@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+ }
+ 
+ body {
+     font-family: helvetica, arial, sans-serif;
+     /* margin: 20px; */
+     background-color: #A3C4F3;
+ }
+
+ section {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 100px;
+    background-color: #dfe7fd;
+  
+    margin: 40px;
+}
+
+/* STYLLING GRID */
+.floatbox {
+    display: block;
+    box-sizing: border-box;
+    margin: 0px -10px;
+  }
+  
+  .floatbox::after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+  
+  .item {
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 0px 10px;
+  }
+  
+  .item:nth-child(2n + 1) {
+    clear: both;
+  }
+  
+  .content {
+    color: #242424;
+    background-color: #4361EE;
+    font-weight: 600;
+    text-align: center;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 10px;
+  }
+
+@media (max-width: 1000px) {
+    section{
+        padding: 100px 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    section{
+        padding: 125px 30px;
+    }
+}
+
+section p {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 0 20px;
+    line-height: 2;
+}
+
+.caption {
+   text-align: center;
+}
+
+
+ ul.about-content {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex; 
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.about-content li{
+    padding: 20px;
+    height: 350px;
+    background-clip: content-box;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.about {
+    flex-basis: 100%;
+    /* background-image: url(../../images/facebook.png);   */
+}
+
+.about {
+    flex-basis: 50%;
+    /* background-image: url(../../images/closeup.png);   */
+}
+
+.about-left {
+    position: relative;
+    flex-basis: 50%;
+    /* background-image: url(../../images/facebook.png);  */
+}
+
+.about-left-first{
+    position: relative;
+    flex-basis: 50%;
+    /* background-image: url(../../images/facebook.png); */
+}
+
+.about-left-second{
+    position: relative;
+    flex-basis: 50%;
+    /* background-image: url(../../images/half.png); */
+}
+
+.about-right{
+    position: relative;
+    flex-basis: 50%;
+    /* background-image: url(../../images/jazz2.png); */
+}
+
+  /* OVERLAY STYLES */
+/* .container {
+    position: relative;
+    width: 50%;
+  } */
+  
+
+  /* .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #FFD6A5;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  } */
+
+  .container {
+    position: relative;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #CD84DB;
+  }
+
+  a {
+    list-style: none;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+ }
+ 
+ a:link {
+     text-decoration: none;
+   }
+   a:link {
+     color: #F72585;
+   }
+   
+   a:visited {
+     color: #fff;
+   }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+p {
+    text-align: justify;
+    width: 100%;
+}
+
+.section-title{
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 0 auto;
+    padding: 0;
+}
